@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Room</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to the Chat Room</h2>
+        <select id="roomSelect">
+            <option value="devops">DevOps</option>
+            <option value="cloud">Cloud Computing</option>
+            <option value="nodejs">NodeJS</option>
+        </select>
+        <button id="joinRoom">Join Room</button>
+        <button id="leaveRoom">Leave Room</button>
+
+        <div id="chatBox">
+            <div id="messages"></div>
+            <input type="text" id="messageInput" placeholder="Type a message...">
+            <button id="sendMessage">Send</button>
+        </div>
+        <button id="logout">Logout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
